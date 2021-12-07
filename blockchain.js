@@ -9,11 +9,7 @@ class Transaction {
     this.fromAddr = fromAddr;
     this.toAddr = toAddr;
     this.amount = amount;
-    
-    var primeLength = 60;
-    var diffHell = crypto.createDiffieHellman(primeLength);
-    
-    diffHell.generateKeys('base64');
+   
   }
   
   calculateHash() {
